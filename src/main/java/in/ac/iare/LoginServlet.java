@@ -8,7 +8,7 @@ public class LoginServlet extends HttpServlet {
     PrintWriter out=response.getWriter();
     String user=request.getParameter("user").trim();
     String pass=request.getParameter("pass").trim();
-    if(user.equals("abc") && pass.equals("xyz")) {
+    if(user.equals("abc") && pass.equals("mayuri")) {
       request.setAttribute("user", user);
       getServletContext().getRequestDispatcher("/LoginSuccess.jsp").forward(request, response);
     } else {
